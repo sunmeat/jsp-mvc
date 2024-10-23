@@ -8,10 +8,10 @@
     </p> -->
     <form name="f1" method="post" action="user" class="user-form">
         <label for="name">Имя пользователя:</label>
-        <input id="name" name="name" type="text" maxlength="20" value="Alexander"/>
+        <input id="name" name="name" type="text" maxlength="20" value="" required />
         
         <label for="email">E-mail:</label>
-        <input id="email" name="email" type="email" maxlength="20" value="sunmeatrich@gmail.com"/>
+        <input id="email" name="email" type="email" maxlength="20" value="" required />
         
         <input type="submit" name="submit" value="Добавить пользователя" class="submit-button" />
     </form>
