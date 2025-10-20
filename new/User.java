@@ -8,7 +8,9 @@ import java.util.Date;
 // https://www.baeldung.com/java-pojo-class
 // https://en.wikipedia.org/wiki/Plain_Old_Java_Object
 // https://www.geeksforgeeks.org/advance-java/pojo-vs-java-beans/
-public class User {
+
+public class User implements java.io.Serializable {
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private String email;
 	private Date regDate;
@@ -17,6 +19,10 @@ public class User {
 		this.name = name;
 		this.email = email;
 		this.regDate = regDate;
+	}
+	
+	public User() {
+		this ("", "", new Date());
 	}
 
 	public String getName() {
